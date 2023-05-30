@@ -3,13 +3,13 @@ import UIKit
 import AnimatedCollectionViewLayout
 
 final class MainView: UIViewController {
-    private let logoView: UIImageView = {
+    private lazy var logoView: UIImageView = {
         let logo = UIImageView()
         logo.image = UIImage(named: "logo")
         logo.contentMode = .scaleAspectFit
         return logo
     }()
-    private let textLable: UILabel = {
+    private lazy var textLable: UILabel = {
         let textMarvel = UILabel()
         textMarvel.text = "Choose your hero".localize()
         textMarvel.textAlignment = .center
@@ -41,7 +41,7 @@ final class MainView: UIViewController {
                                                 for: .valueChanged)
         return collectionView
     }()
-    private let activityView: UIView = {
+    private lazy var activityView: UIView = {
         let view = UIView()
         let activityIndicator = UIActivityIndicatorView()
         activityIndicator.color = .red
@@ -130,6 +130,11 @@ final class MainView: UIViewController {
         }
     }
     private func setupLayouts() {
+        galleryCollectionView.snp.makeConstraints { make in
+            make.top.equalTo(textLable.snp.bottom).inset(10)
+            make.left.right.equalToSuperview()
+            make.bottom.equalToSuperview()
+        }
         if UIDevice.current.orientation.isLandscape {
             setupLandscapeLayout()
         }

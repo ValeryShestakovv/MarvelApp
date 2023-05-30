@@ -14,7 +14,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - AlamofireImage (~> 4.1)
+  - AlamofireImage
   - AnimatedCollectionViewLayout (~> 1.1.0)
   - Kingfisher (~> 7.0)
   - RealmSwift (~> 10)
@@ -42,6 +42,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
 
-PODFILE CHECKSUM: 5f16ebae18a8e3ed95571419b4143df8ec09b97a
+PODFILE CHECKSUM: c11e3f74039ee7690fa1cacfad7f68b7dd509ec7
 
 COCOAPODS: 1.11.3

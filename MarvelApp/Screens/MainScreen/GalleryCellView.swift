@@ -5,21 +5,21 @@ import Kingfisher
 
 final class GalleryCellView: UICollectionViewCell {
     static let reuseId = "GalleryCollectionViewCell"
-    var imageView: UIImageView = {
+    lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .red
         imageView.layer.cornerRadius = 16
         imageView.layer.masksToBounds = true
         return imageView
     }()
-    private let nameLabel: UILabel = {
+    private lazy var nameLabel: UILabel = {
         let text = UILabel()
         text.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
         text.textColor = .white
         text.font = UIFont(name: "HelveticaNeue-Bold", size: 30)
         return text
     }()
-    private let activityView: UIView = {
+    private lazy var activityView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 16
         view.layer.masksToBounds = true

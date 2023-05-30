@@ -9,6 +9,7 @@ target 'MarvelApp' do
   pod 'AnimatedCollectionViewLayout', '~> 1.1.0'
   pod 'SwiftLint'
   pod 'Alamofire'
+  pod 'AlamofireImage'
   pod 'RealmSwift', '~>10'
   pod 'Kingfisher', '~> 7.0'
 end
